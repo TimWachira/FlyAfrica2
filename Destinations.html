@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="About Us.html">About Us</a></li>
+            <li><a href="destinations.html">Destinations</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="Experiences.html">Experiences</a></li>
+            <li><a href="Contact Us.html">Contact Us</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+        </ul>
+    </nav>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book a Flight - FlyAfrica</title>
+    <link rel="stylesheet" href="styles.css">
+    
+    <style>
+        body{
+            background-image: url(images/Destination.jpg);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 100vh; /* Adjust height to fill the viewport */
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Book a Flight</h1>
+        <form action="#">
+            <label for="from">From:</label>
+            <select id="from" name="from">
+                <option value="" disabled selected>Select departure city</option>
+                <option value="Nairobi">Jomo Kenyatta Int'l Airport (NBO)</option>
+                <optgroup label="Europe">
+                    <option value="LHR">London Heathrow Airport (LHR)</option>
+                    <option value="CDG">Paris Charles de Gaulle Airport (CDG)</option>
+                    <option value="FRA">Frankfurt Airport (FRA)</option>
+                    <option value="BRU">Brussels Airport (BRU)</option>
+                    <option value="BER">Berlin Bradenburg Airport (BER)</option>
+                    <option value=""></option>
+                    
+                </optgroup>
+            </select>
+
+            <label for="to">To:</label>
+            <select id="to" name="to">
+                <option value="" disabled selected>Select destination city</option>
+                <option value="Nairobi">Nairobi</option>
+                <optgroup label="Europe">
+                    <option value="LHR">London Heathrow Airport (LHR)</option>
+                    <option value="CDG">Paris Charles de Gaulle Airport (CDG)</option>
+                    <option value="FRA">Frankfurt Airport (FRA)</option>
+                    <option value="NBO">Nairobi Int'l Airport (NBO)</option>
+                </optgroup>
+            </select>
+
+            <label for="departure-date">Departure Date:</label>
+            <input type="date" id="departure-date" name="departure-date">
+
+            <label for="return-date">Return Date:</label>
+            <input type="date" id="return-date" name="return-date">
+
+            <label for="passengers">Passengers:</label>
+            <select name="passengers" id="passengers">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+
+            <input type="submit" value="Search Flights">
+        </form>
+    </div>
+</body>
+
+</html>
