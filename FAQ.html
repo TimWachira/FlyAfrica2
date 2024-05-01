@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlyAfrica - FAQ</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        
+
+        body {
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        /* Style for FAQ sections */
+        .faq-section {
+            margin-bottom: 30px;
+        }
+
+        .faq-question {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            cursor: pointer;
+        }
+
+        .faq-answer {
+            display: none;
+            font-size: 16px;
+            margin-bottom: 15px;
+        }
+
+        /* Show answer when question is clicked */
+        .faq-question.active + .faq-answer {
+            display: block;
+        }
+
+        /* Style for the plus/minus icon */
+        .faq-question::after {
+            content: "+";
+            float: right;
+        }
+
+        .faq-question.active::after {
+            content: "-";
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="destinations.html">Destinations</a></li>
+            <li><a href="Loyalty Rewards.html">Loyalty Rewards</a></li>
+            <li><a href="experiences.html">Experiences</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+        </ul>
+    </nav>
+
+    <!-- Content for the FAQ page -->
+    <div class="container">
+        <h1>Frequently Asked Questions</h1>
+
+        <!-- FAQ Section 1 -->
+        <div class="faq-section">
+            <div class="faq-question">What's the bag limit for Economy 
+                class both Carry-on and Check-In?
+            </div>
+            <div class="faq-answer">The bag limit should be 7kg Carry-on for economy class, and 23kg for check in. 
+                Each passenger is allowed 23kgx2 and 7kgx1.
+            </div>
+        </div>
+
+        <!-- FAQ Section 2 -->
+        <div class="faq-section">
+            <div class="faq-question">What happens if the airline loses
+                my baggage?
+            </div>
+            <div class="faq-answer">If you’re at the airport, please speak to a member of the FlyAfrica team for help. 
+                If you’ve left the airport, please complete our <a href="">Lost Property Form</a>Lost property form to report missing personal items
+                 or cabin baggage and we’ll respond promptly.</div>
+        </div>
+
+        <!-- FAQ Section 3 -->
+        <div class="faq-section">
+            <div class="faq-question">What should I do if my baggage 
+                is delayed?</div>
+            <div class="faq-answer">If you can't find your baggage at the terminal, 
+                you should visit the baggage services desk at the airport. 
+                This is usually found in the customs hall near the baggage claim area. 
+                When we receive your baggage, we’ll contact you to arrange a delivery time, 
+                subject to approval by customs.</div>
+        </div>
+  
